@@ -1,11 +1,11 @@
-import { EnteFile } from "@/new/photos/types/file";
+import { CollectionSummaryType, CollectionType } from "constants/collection";
+import { EnteFile } from "types/file";
 import {
     EncryptedMagicMetadata,
     MagicMetadataCore,
     SUB_TYPE,
     VISIBILITY_STATE,
-} from "@/new/photos/types/magicMetadata";
-import { CollectionSummaryType, CollectionType } from "constants/collection";
+} from "types/magicMetadata";
 
 export enum COLLECTION_ROLE {
     VIEWER = "VIEWER",

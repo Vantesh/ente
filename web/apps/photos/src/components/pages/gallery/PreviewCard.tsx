@@ -1,5 +1,4 @@
 import { FILE_TYPE } from "@/media/file-type";
-import { EnteFile } from "@/new/photos/types/file";
 import log from "@/next/log";
 import { Overlay } from "@ente/shared/components/Container";
 import { CustomError } from "@ente/shared/error";
@@ -18,6 +17,7 @@ import { DeduplicateContext } from "pages/deduplicate";
 import { GalleryContext } from "pages/gallery";
 import React, { useContext, useEffect, useRef, useState } from "react";
 import DownloadManager from "services/download";
+import { EnteFile } from "types/file";
 import { shouldShowAvatar } from "utils/file";
 import Avatar from "./Avatar";
 

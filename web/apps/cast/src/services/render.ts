@@ -9,12 +9,6 @@ import { FILE_TYPE } from "@/media/file-type";
 import { isHEICExtension, isNonWebImageFileExtension } from "@/media/formats";
 import { heicToJPEG } from "@/media/heic-convert";
 import { decodeLivePhoto } from "@/media/live-photo";
-import type {
-    EncryptedEnteFile,
-    EnteFile,
-    FileMagicMetadata,
-    FilePublicMagicMetadata,
-} from "@/new/photos/types/file";
 import { nameAndExtension } from "@/next/file";
 import log from "@/next/log";
 import { apiOrigin, customAPIOrigin } from "@/next/origins";
@@ -27,6 +21,12 @@ import HTTPService from "@ente/shared/network/HTTPService";
 import type { AxiosResponse } from "axios";
 import type { CastData } from "services/cast-data";
 import { detectMediaMIMEType } from "services/detect-type";
+import type {
+    EncryptedEnteFile,
+    EnteFile,
+    FileMagicMetadata,
+    FilePublicMagicMetadata,
+} from "types/file";
 import { isChromecast } from "./chromecast";
 
 /**

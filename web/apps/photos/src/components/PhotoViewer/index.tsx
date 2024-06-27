@@ -1,4 +1,3 @@
-import { EnteFile } from "@/new/photos/types/file";
 import log from "@/next/log";
 import Photoswipe from "photoswipe";
 import PhotoswipeUIDefault from "photoswipe/dist/photoswipe-ui-default";
@@ -7,6 +6,7 @@ import {
     addToFavorites,
     removeFromFavorites,
 } from "services/collectionService";
+import { EnteFile } from "types/file";
 import {
     copyFileToClipboard,
     downloadSingleFile,
@@ -16,7 +16,6 @@ import {
 
 import { FILE_TYPE } from "@/media/file-type";
 import { isNonWebImageFileExtension } from "@/media/formats";
-import type { LoadedLivePhotoSourceURL } from "@/new/photos/types/file";
 import { lowercaseExtension } from "@/next/file";
 import { FlexWrapper } from "@ente/shared/components/Container";
 import EnteSpinner from "@ente/shared/components/EnteSpinner";
@@ -45,7 +44,7 @@ import isElectron from "is-electron";
 import { AppContext } from "pages/_app";
 import { GalleryContext } from "pages/gallery";
 import { detectFileTypeInfo } from "services/detect-type";
-import downloadManager from "services/download";
+import downloadManager, { LoadedLivePhotoSourceURL } from "services/download";
 import { getParsedExifData } from "services/exif";
 import { trashFiles } from "services/fileService";
 import { SetFilesDownloadProgressAttributesCreator } from "types/gallery";

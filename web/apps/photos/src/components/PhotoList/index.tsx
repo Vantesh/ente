@@ -1,4 +1,3 @@
-import { EnteFile } from "@/new/photos/types/file";
 import { FlexWrapper } from "@ente/shared/components/Container";
 import { formatDate } from "@ente/shared/time/format";
 import { Box, Checkbox, Link, Typography, styled } from "@mui/material";
@@ -22,6 +21,7 @@ import {
     ListChildComponentProps,
     areEqual,
 } from "react-window";
+import { EnteFile } from "types/file";
 import { handleSelectCreator } from "utils/photoFrame";
 import { PublicCollectionGalleryContext } from "utils/publicCollectionGallery";
 import { formattedByteSize } from "utils/units";

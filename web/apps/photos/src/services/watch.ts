@@ -3,8 +3,6 @@
  * watch folders functionality.
  */
 
-import { getLocalFiles } from "@/new/photos/services/files";
-import { EncryptedEnteFile } from "@/new/photos/types/file";
 import { ensureElectron } from "@/next/electron";
 import { basename, dirname } from "@/next/file";
 import log from "@/next/log";
@@ -20,8 +18,10 @@ import uploadManager, {
     type UploadItemWithCollection,
 } from "services/upload/uploadManager";
 import { Collection } from "types/collection";
+import { EncryptedEnteFile } from "types/file";
 import { groupFilesBasedOnCollectionID } from "utils/file";
 import { removeFromCollection } from "./collectionService";
+import { getLocalFiles } from "./fileService";
 
 /**
  * Watch for file system folders and automatically update the corresponding Ente

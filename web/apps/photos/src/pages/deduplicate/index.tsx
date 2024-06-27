@@ -1,11 +1,11 @@
-import { getLocalFiles } from "@/new/photos/services/files";
+import { t } from "i18next";
+
 import PhotoFrame from "components/PhotoFrame";
 import { ALL_SECTION } from "constants/collection";
-import { t } from "i18next";
 import { AppContext } from "pages/_app";
 import { createContext, useContext, useEffect, useState } from "react";
 import { Duplicate, getDuplicates } from "services/deduplicationService";
-import { syncFiles, trashFiles } from "services/fileService";
+import { getLocalFiles, syncFiles, trashFiles } from "services/fileService";
 import { SelectedState } from "types/gallery";
 
 import { VerticallyCentered } from "@ente/shared/components/Container";

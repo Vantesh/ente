@@ -1,4 +1,3 @@
-import { EnteFile } from "@/new/photos/types/file";
 import { FlexWrapper, HorizontalFlex } from "@ente/shared/components/Container";
 import SidebarToggler from "@ente/shared/components/Navbar/SidebarToggler";
 import NavbarBase from "@ente/shared/components/Navbar/base";
@@ -10,6 +9,7 @@ import { t } from "i18next";
 import { AppContext } from "pages/_app";
 import React from "react";
 import { Collection } from "types/collection";
+import { EnteFile } from "types/file";
 import { UpdateSearch } from "types/search";
 
 interface Iprops {

@@ -1,4 +1,3 @@
-import { EnteFile } from "@/new/photos/types/file";
 import log from "@/next/log";
 import ChangeDirectoryOption from "@ente/shared/components/ChangeDirectoryOption";
 import {
@@ -25,6 +24,7 @@ import exportService, {
     selectAndPrepareExportDirectory,
 } from "services/export";
 import { ExportProgress, ExportSettings } from "types/export";
+import { EnteFile } from "types/file";
 import { getExportDirectoryDoesNotExistMessage } from "utils/ui";
 import { DirectoryPath } from "./Directory";
 import ExportFinished from "./ExportFinished";

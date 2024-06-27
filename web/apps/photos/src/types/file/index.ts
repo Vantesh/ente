@@ -1,9 +1,10 @@
 import type { Metadata } from "@/media/types/file";
+import { SourceURLs } from "services/download";
 import {
+    EncryptedMagicMetadata,
+    MagicMetadataCore,
     VISIBILITY_STATE,
-    type EncryptedMagicMetadata,
-    type MagicMetadataCore,
-} from "./magicMetadata";
+} from "types/magicMetadata";
 
 export interface MetadataFileAttributes {
     encryptedData: string;
@@ -60,33 +61,6 @@ export interface EnteFile
     isSourceLoaded?: boolean;
     conversionFailed?: boolean;
     isConverted?: boolean;
-}
-
-export interface LivePhotoSourceURL {
-    image: () => Promise<string>;
-    video: () => Promise<string>;
-}
-
-export interface LoadedLivePhotoSourceURL {
-    image: string;
-    video: string;
-}
-
-export interface SourceURLs {
-    url: string | LivePhotoSourceURL | LoadedLivePhotoSourceURL;
-    isOriginal: boolean;
-    isRenderable: boolean;
-    type: "normal" | "livePhoto";
-    /**
-     * Best effort attempt at obtaining the MIME type.
-     *
-     * Known cases where it is missing:
-     *
-     * - Live photos (these have a different code path for obtaining the URL).
-     * - A video that is passes the isPlayable test in the browser.
-     *
-     */
-    mimeType?: string;
 }
 
 export interface TrashRequest {

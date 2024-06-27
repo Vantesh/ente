@@ -1,5 +1,4 @@
 import { FILE_TYPE } from "@/media/file-type";
-import { EnteFile } from "@/new/photos/types/file";
 import { ensureElectron } from "@/next/electron";
 import log from "@/next/log";
 import { clientPackageNamePhotosDesktop } from "@/next/types/app";
@@ -9,6 +8,7 @@ import { getToken, getUserID } from "@ente/shared/storage/localStorage/helpers";
 import debounce from "debounce";
 import PQueue from "p-queue";
 import type { DedicatedMLWorker } from "services/face/face.worker";
+import { EnteFile } from "types/file";
 
 export type JobState = "Scheduled" | "Running" | "NotScheduled";
 

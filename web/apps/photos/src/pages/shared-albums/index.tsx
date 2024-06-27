@@ -1,4 +1,3 @@
-import { EnteFile } from "@/new/photos/types/file";
 import log from "@/next/log";
 import {
     CenteredFlex,
@@ -59,6 +58,7 @@ import {
     verifyPublicCollectionPassword,
 } from "services/publicCollectionService";
 import { Collection } from "types/collection";
+import { EnteFile } from "types/file";
 import {
     SelectedState,
     SetFilesDownloadProgressAttributes,

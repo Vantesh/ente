@@ -1,4 +1,3 @@
-import { EnteFile } from "@/new/photos/types/file";
 import { FlexWrapper } from "@ente/shared/components/Container";
 import { Box, styled } from "@mui/material";
 import {
@@ -19,6 +18,7 @@ import {
     areEqual,
 } from "react-window";
 import { Duplicate } from "services/deduplicationService";
+import { EnteFile } from "types/file";
 import { formattedByteSize } from "utils/units";
 
 export enum ITEM_TYPE {

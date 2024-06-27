@@ -3,7 +3,7 @@ import type {
     EncryptedMagicMetadata,
     MagicMetadataCore,
     VISIBILITY_STATE,
-} from "@/new/photos/types/magicMetadata";
+} from "types/magicMetadata";
 
 export interface MetadataFileAttributes {
     encryptedData: string;

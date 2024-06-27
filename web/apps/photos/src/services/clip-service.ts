@@ -1,6 +1,4 @@
 import { FILE_TYPE } from "@/media/file-type";
-import { getAllLocalFiles, getLocalFiles } from "@/new/photos/services/files";
-import { EnteFile } from "@/new/photos/types/file";
 import { ensureElectron } from "@/next/electron";
 import log from "@/next/log";
 import ComlinkCryptoWorker from "@ente/shared/crypto";
@@ -10,9 +8,11 @@ import { LS_KEYS, getData } from "@ente/shared/storage/localStorage";
 import isElectron from "is-electron";
 import PQueue from "p-queue";
 import { Embedding } from "types/embedding";
+import { EnteFile } from "types/file";
 import { getPersonalFiles } from "utils/file";
 import downloadManager from "./download";
 import { localCLIPEmbeddings, putEmbedding } from "./embeddingService";
+import { getAllLocalFiles, getLocalFiles } from "./fileService";
 
 /** Status of CLIP indexing on the images in the user's local library. */
 export interface CLIPIndexingStatus {

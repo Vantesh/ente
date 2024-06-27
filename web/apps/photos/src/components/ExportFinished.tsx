@@ -1,4 +1,3 @@
-import { EnteFile } from "@/new/photos/types/file";
 import { SpaceBetweenFlex } from "@ente/shared/components/Container";
 import { formatDateTime } from "@ente/shared/time/format";
 import {
@@ -10,6 +9,7 @@ import {
 } from "@mui/material";
 import { t } from "i18next";
 import { useState } from "react";
+import { EnteFile } from "types/file";
 import { formatNumber } from "utils/number/format";
 import ExportPendingList from "./ExportPendingList";
 import LinkButton from "./pages/gallery/LinkButton";

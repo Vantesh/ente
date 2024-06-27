@@ -9,8 +9,7 @@ const LocalUser = z.object({
     /**
      * The user's (plaintext) auth token.
      *
-     * It is used for making API calls on their behalf, by passing this token as
-     * the value of the X-Auth-Token header in the HTTP request.
+     * It is used for making API calls on their behalf.
      */
     token: z.string(),
 });
