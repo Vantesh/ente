@@ -1,7 +1,7 @@
 {
   "icons": [
     { "title": "1xBet",
-      "altNames": ["1x", "1x bet", "1x-bet"
+      "altNames": ["1", "1x bet", "1x-bet"
       ]
     },
     {
@@ -353,7 +353,7 @@
       "title": "Odido"
     },
     { "title": "okx",
-      "hex": "858585" },
+      "hex": "000000" },
     {
       "title": "Parsec"
     },
