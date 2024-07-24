@@ -1,8 +1,7 @@
 {
   "icons": [
     { "title": "1xBet",
-      "altNames": ["1x", "1x bet", "1x-bet"
-      ]
+      "altNames": ["1x", "1x bet",]
     },
     {
       "title": "3Commas"
@@ -138,6 +137,10 @@
     {
       "title": "dus.net",
       "slug": "dusnet"
+    },
+    {
+      "title":"ecitizen kenya",
+      "slug":"ecitizen_kenya"
     },
     {
       "title": "ente",
