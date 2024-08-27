@@ -1,7 +1,11 @@
 {
   "icons": [
     {
-      "title": "1xBet"
+      "title": "1XBET.com",
+      "slug": "1XBET",
+      "altNames": [
+        "1XBET.co.ke"
+      ]
     },
     {
       "title": "3Commas"
@@ -22,6 +26,15 @@
       "slug": "anycoindirect"
     },
     {
+      "title": "Athene Network",
+      "slug": "Athene_network",
+      "altNames": [
+        "Athene.network"
+      ],
+      "hex":"000000"
+    },
+    
+    {
       "title": "AscendEX"
     },
     {
@@ -31,7 +44,7 @@
       "title": "bitget"
     },
     {
-      "titile":"bitget wallet",
+      "title":"bitget wallet",
       "slug":"bitget_wallet"
     },
     {
